@@ -1,6 +1,6 @@
 import React from 'react'
-import { Page } from './lib/Page'
+import Navigator from './lib/pages/Navigator'
 
 export default function App() {
-  return <Page />
+  return <Navigator />
 }

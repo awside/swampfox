@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components/native'
 
-export function TopMenu(props: { title?: String }) {
+export function LabelTop(props: { text?: String }) {
   const Title = styled.Text`
     font-size: 50px;
     font-weight: bold;
     color: #707070;
   `
 
-  return <Title>{props.title}</Title>
+  return <Title>{props.text}</Title>
 }
 
-export function Bar(props: { title?: String }) {
+export function LabelBar(props: { text?: String }) {
   const Container = styled.View`
     width: 100%;
     flex-direction: row;
@@ -35,7 +35,7 @@ export function Bar(props: { title?: String }) {
   return (
     <Container>
       <Thickline />
-      <Title>{props.title}</Title>
+      <Title>{props.text}</Title>
       <Thickline />
     </Container>
   )
